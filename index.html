@@ -1,127 +1,67 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
-  <title>UK Model Railway Heritage</title>
-  <link href="https://fonts.googleapis.com/css?family=Lora:700|Open+Sans:400,700&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Model Railway</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lora:wght@400;700&family=Open+Sans:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-  <!-- NAVIGATION -->
-  <nav>
-    <ul>
-      <li><a href="#history">History</a></li>
-      <li><a href="#lookup">Train Lookup</a></li>
-      <li><a href="#museums">Museums</a></li>
-      <li><a href="#events">Events</a></li>
-    </ul>
-  </nav>
+    <header class="site-header">
+        <h1>My Model Railway Companion</h1>
+        <nav>
+            <!-- Navigation links will go here later -->
+        </nav>
+    </header>
 
-  <!-- HERO IMAGE -->
-  <div class="hero">
-    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1000&q=80" 
-         alt="Model railway hero" />
-    <div class="hero-text">
-      <h1>UK Model Railway Heritage</h1>
-      <p>Discover the magic of Britain's model trains and real-life heritage railways.</p>
-    </div>
-  </div>
+    <main class="container">
+        <section id="collection-display">
+            <h2>My Collection</h2>
+            <div class="item-cards-container">
+                <!-- Locomotive/Rolling Stock cards will be dynamically added here by JS -->
+                <p class="placeholder-text">Your collection will appear here. Add your first item!</p>
+            </div>
+        </section>
 
-  <div class="content-box">
-    <section id="history">
-      <h2>History of Model Railways</h2>
-      <p>
-        Model railways first appeared in the Victorian era, captivating generations ever since. The UK led the way with iconic makers like Hornby and Tri-ang, inspiring hobbyists to recreate the golden age of rail in miniature. The rise of clubs, exhibitions, and dedicated magazines from the early 20th century made model railways a beloved pastime for all ages.
-      </p>
-      <p>
-        In British popular culture, model railways appear in films like "The Railway Children" and TV shows such as "Thomas & Friends." Today, clubs, layouts, and competitions remain at the heart of UK hobby life.
-      </p>
-    </section>
+        <section id="add-item-form-section">
+            <h2>Add New Item</h2>
+            <form id="addItemForm">
+                <div>
+                    <label for="itemName">Item Name:</label>
+                    <input type="text" id="itemName" name="itemName" required>
+                </div>
+                <div>
+                    <label for="itemType">Type:</label>
+                    <select id="itemType" name="itemType">
+                        <option value="locomotive">Locomotive</option>
+                        <option value="rollingStock">Rolling Stock</option>
+                        <option value="building">Building</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="itemManufacturer">Manufacturer:</label>
+                    <input type="text" id="itemManufacturer" name="itemManufacturer">
+                </div>
+                <div>
+                    <label for="itemEra">Era:</label>
+                    <input type="text" id="itemEra" name="itemEra">
+                </div>
+                <div>
+                    <label for="itemNotes">Notes:</label>
+                    <textarea id="itemNotes" name="itemNotes"></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Add to Collection</button>
+            </form>
+        </section>
+    </main>
 
-    <section>
-      <h2>Why Model Railways?</h2>
-      <p>
-        From children to seasoned collectors, model railways attract people from every walk of life. They combine creativity, craftsmanship, and history, offering a relaxing escape and a tangible link to Britain’s transport heritage. Whether building layouts or restoring classic trains, the hobby bridges generations and fosters friendships.
-      </p>
-    </section>
-
-    <section id="lookup">
-      <h2>Train Lookup</h2>
-      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Flying_Scotsman_60103_in_2018.jpg" 
-        alt="Flying Scotsman" class="lookup-image">
-      <form id="train-form">
-        <input
-          id="train-input"
-          type="text"
-          placeholder="Type a train name (e.g., Flying Scotsman)..."
-          aria-label="Type train name"
-        />
-        <button type="submit">Search</button>
-      </form>
-      <div id="train-result" class="train-box"></div>
-    </section>
-
-    <section>
-      <h2>Did You Know?</h2>
-      <ul id="fun-facts"></ul>
-    </section>
-
-    <section id="museums">
-      <h2>Train Museums & Heritage Lines</h2>
-      <ul class="museum-list">
-        <li>
-          <strong>National Railway Museum, York</strong> – The world’s largest railway museum.<br>
-          <a href="https://www.railwaymuseum.org.uk/" target="_blank">Visit site</a>
-        </li>
-        <li>
-          <strong>Severn Valley Railway</strong> – Steam trains, scenic routes, and regular events in Shropshire/Worcestershire.<br>
-          <a href="https://www.svr.co.uk/" target="_blank">Visit site</a>
-        </li>
-        <li>
-          <strong>Bo’ness & Kinneil Railway, Scotland</strong> – Scottish preserved railway with working vintage trains.<br>
-          <a href="https://www.bkrailway.co.uk/" target="_blank">Visit site</a>
-        </li>
-        <li>
-          <strong>Didcot Railway Centre</strong> – Historic steam engines and demonstration lines in Oxfordshire.<br>
-          <a href="https://didcotrailwaycentre.org.uk/" target="_blank">Visit site</a>
-        </li>
-        <li>
-          <strong>Great Central Railway</strong> – The UK’s only double track, main line heritage railway.<br>
-          <a href="https://www.gcrailway.co.uk/" target="_blank">Visit site</a>
-        </li>
-      </ul>
-    </section>
-
-    <section id="events">
-      <h2>Upcoming Railway Events & Steam Galas</h2>
-      <ul class="event-list">
-        <li>
-          <strong>Severn Valley Steam Gala</strong> – 19-22 September 2025.<br>
-          <a href="https://www.svr.co.uk/steam-gala/" target="_blank">Event details</a>
-        </li>
-        <li>
-          <strong>Great Central Railway Winter Gala</strong> – January 2026.<br>
-          <a href="https://www.gcrailway.co.uk/winter-gala/" target="_blank">Event details</a>
-        </li>
-        <li>
-          <strong>Bo’ness Model Railway Exhibition</strong> – Every April.<br>
-          <a href="https://www.bkrailway.co.uk/events/" target="_blank">Event details</a>
-        </li>
-        <li>
-          <strong>Didcot Autumn Steam Festival</strong> – October 2025.<br>
-          <a href="https://didcotrailwaycentre.org.uk/events/autumn-steam-festival" target="_blank">Event details</a>
-        </li>
-      </ul>
-      <p>
-        <em>Tip: For more events, check with your local heritage railway or railway museum—most run annual steam galas, themed weekends, and family days out.</em>
-      </p>
-    </section>
-
-    <footer class="footer">
-      &copy; <span id="year"></span> UK Model Railway Heritage. All rights reserved.
+    <footer class="site-footer">
+        <p>© 2023 [Your Name/Missyrupert]. All rights reserved.</p>
     </footer>
-  </div>
-  <script src="script.js"></script>
+
+    <script src="js/script.js"></script>
 </body>
 </html>

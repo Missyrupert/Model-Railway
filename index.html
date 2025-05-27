@@ -4,25 +4,32 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
   <title>UK Model Railway Heritage</title>
+  <link href="https://fonts.googleapis.com/css?family=Lora:700|Open+Sans:400,700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- NAVIGATION -->
+  <nav>
+    <ul>
+      <li><a href="#history">History</a></li>
+      <li><a href="#lookup">Train Lookup</a></li>
+      <li><a href="#museums">Museums</a></li>
+      <li><a href="#events">Events</a></li>
+    </ul>
+  </nav>
+
+  <!-- HERO IMAGE -->
   <div class="hero">
-  <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1000&q=80" 
-       alt="Model railway hero" />
-  <div class="hero-text">
-    <h1>UK Model Railway Heritage</h1>
-    <p>Discover the magic of Britain's model trains and real-life heritage railways.</p>
+    <img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&fit=crop&w=1000&q=80" 
+         alt="Model railway hero" />
+    <div class="hero-text">
+      <h1>UK Model Railway Heritage</h1>
+      <p>Discover the magic of Britain's model trains and real-life heritage railways.</p>
+    </div>
   </div>
-</div>
 
   <div class="content-box">
-    <h1 class="main-title">UK Model Railway Heritage</h1>
-    <p>
-      Welcome! This site celebrates the rich tradition of model railways in Britain, exploring their fascinating history, enduring popularity, and unique place in our national culture.
-    </p>
-
-    <section>
+    <section id="history">
       <h2>History of Model Railways</h2>
       <p>
         Model railways first appeared in the Victorian era, captivating generations ever since. The UK led the way with iconic makers like Hornby and Tri-ang, inspiring hobbyists to recreate the golden age of rail in miniature. The rise of clubs, exhibitions, and dedicated magazines from the early 20th century made model railways a beloved pastime for all ages.
@@ -39,58 +46,10 @@
       </p>
     </section>
 
-    <section>
-  <h2>Train Museums & Heritage Lines</h2>
-  <ul class="museum-list">
-    <li>
-      <strong>National Railway Museum, York</strong> – The world’s largest railway museum.<br>
-      <a href="https://www.railwaymuseum.org.uk/" target="_blank">Visit site</a>
-    </li>
-    <li>
-      <strong>Severn Valley Railway</strong> – Steam trains, scenic routes, and regular events in Shropshire/Worcestershire.<br>
-      <a href="https://www.svr.co.uk/" target="_blank">Visit site</a>
-    </li>
-    <li>
-      <strong>Bo’ness & Kinneil Railway, Scotland</strong> – Scottish preserved railway with working vintage trains.<br>
-      <a href="https://www.bkrailway.co.uk/" target="_blank">Visit site</a>
-    </li>
-    <li>
-      <strong>Didcot Railway Centre</strong> – Historic steam engines and demonstration lines in Oxfordshire.<br>
-      <a href="https://didcotrailwaycentre.org.uk/" target="_blank">Visit site</a>
-    </li>
-    <li>
-      <strong>Great Central Railway</strong> – The UK’s only double track, main line heritage railway.<br>
-      <a href="https://www.gcrailway.co.uk/" target="_blank">Visit site</a>
-    </li>
-  </ul>
-</section>
-
-<section>
-  <h2>Upcoming Railway Events & Steam Galas</h2>
-  <ul class="event-list">
-    <li>
-      <strong>Severn Valley Steam Gala</strong> – 19-22 September 2025.<br>
-      <a href="https://www.svr.co.uk/steam-gala/" target="_blank">Event details</a>
-    </li>
-    <li>
-      <strong>Great Central Railway Winter Gala</strong> – January 2026.<br>
-      <a href="https://www.gcrailway.co.uk/winter-gala/" target="_blank">Event details</a>
-    </li>
-    <li>
-      <strong>Bo’ness Model Railway Exhibition</strong> – Every April.<br>
-      <a href="https://www.bkrailway.co.uk/events/" target="_blank">Event details</a>
-    </li>
-    <li>
-      <strong>Didcot Autumn Steam Festival</strong> – October 2025.<br>
-      <a href="https://didcotrailwaycentre.org.uk/events/autumn-steam-festival" target="_blank">Event details</a>
-    </li>
-  </ul>
-  <p>
-    <em>Tip: For more events, check with your local heritage railway or railway museum—most run annual steam galas, themed weekends, and family days out.</em>
-  </p>
-</section>
-    <section>
+    <section id="lookup">
       <h2>Train Lookup</h2>
+      <img src="https://upload.wikimedia.org/wikipedia/commons/4/4a/Flying_Scotsman_60103_in_2018.jpg" 
+        alt="Flying Scotsman" class="lookup-image">
       <form id="train-form">
         <input
           id="train-input"
@@ -106,6 +65,57 @@
     <section>
       <h2>Did You Know?</h2>
       <ul id="fun-facts"></ul>
+    </section>
+
+    <section id="museums">
+      <h2>Train Museums & Heritage Lines</h2>
+      <ul class="museum-list">
+        <li>
+          <strong>National Railway Museum, York</strong> – The world’s largest railway museum.<br>
+          <a href="https://www.railwaymuseum.org.uk/" target="_blank">Visit site</a>
+        </li>
+        <li>
+          <strong>Severn Valley Railway</strong> – Steam trains, scenic routes, and regular events in Shropshire/Worcestershire.<br>
+          <a href="https://www.svr.co.uk/" target="_blank">Visit site</a>
+        </li>
+        <li>
+          <strong>Bo’ness & Kinneil Railway, Scotland</strong> – Scottish preserved railway with working vintage trains.<br>
+          <a href="https://www.bkrailway.co.uk/" target="_blank">Visit site</a>
+        </li>
+        <li>
+          <strong>Didcot Railway Centre</strong> – Historic steam engines and demonstration lines in Oxfordshire.<br>
+          <a href="https://didcotrailwaycentre.org.uk/" target="_blank">Visit site</a>
+        </li>
+        <li>
+          <strong>Great Central Railway</strong> – The UK’s only double track, main line heritage railway.<br>
+          <a href="https://www.gcrailway.co.uk/" target="_blank">Visit site</a>
+        </li>
+      </ul>
+    </section>
+
+    <section id="events">
+      <h2>Upcoming Railway Events & Steam Galas</h2>
+      <ul class="event-list">
+        <li>
+          <strong>Severn Valley Steam Gala</strong> – 19-22 September 2025.<br>
+          <a href="https://www.svr.co.uk/steam-gala/" target="_blank">Event details</a>
+        </li>
+        <li>
+          <strong>Great Central Railway Winter Gala</strong> – January 2026.<br>
+          <a href="https://www.gcrailway.co.uk/winter-gala/" target="_blank">Event details</a>
+        </li>
+        <li>
+          <strong>Bo’ness Model Railway Exhibition</strong> – Every April.<br>
+          <a href="https://www.bkrailway.co.uk/events/" target="_blank">Event details</a>
+        </li>
+        <li>
+          <strong>Didcot Autumn Steam Festival</strong> – October 2025.<br>
+          <a href="https://didcotrailwaycentre.org.uk/events/autumn-steam-festival" target="_blank">Event details</a>
+        </li>
+      </ul>
+      <p>
+        <em>Tip: For more events, check with your local heritage railway or railway museum—most run annual steam galas, themed weekends, and family days out.</em>
+      </p>
     </section>
 
     <footer class="footer">

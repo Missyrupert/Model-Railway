@@ -60,7 +60,7 @@ const funFacts = [
   "The BBC series 'The Great Model Railway Challenge' brought the hobby to prime-time TV.",
 ];
 
-// Populate year in footer
+// Set current year
 document.getElementById("year").textContent = new Date().getFullYear();
 
 // Populate fun facts
@@ -71,7 +71,7 @@ funFacts.forEach(fact => {
   funFactsEl.appendChild(li);
 });
 
-// Train lookup
+// Train lookup logic
 document.getElementById("train-form").addEventListener("submit", function(e) {
   e.preventDefault();
   const query = document.getElementById("train-input").value.trim().toLowerCase();

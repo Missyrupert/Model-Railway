@@ -1,209 +1,119 @@
-body, html {
-  margin: 0;
-  padding: 0;
-  font-family: 'Open Sans', Georgia, serif;
-  background: linear-gradient(135deg, #2e4a27 80%, #bfa256 100%);
-  min-height: 100vh;
+/* --- Global Styles & "Old" Foundation --- */
+body {
+    font-family: 'Open Sans', sans-serif; /* NEW: Clean body text */
+    line-height: 1.6;
+    margin: 0;
+    background-color: #FAF0E6; /* OLD: Sepia/Cream background */
+    color: #333333; /* OLD: Dark text */
 }
 
-nav ul {
-  display: flex;
-  gap: 1.5rem;
-  list-style: none;
-  background: #2e4a27;
-  padding: 1rem 2rem;
-  margin: 0 0 2rem 0;
-  border-radius: 0 0 12px 12px;
-  box-shadow: 0 2px 12px 0 rgba(44, 56, 37, 0.20);
-  justify-content: center;
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #FFFFFF; /* NEW: Clean content area */
+    box-shadow: 0 0 15px rgba(0,0,0,0.1); /* NEW: Subtle modern shadow */
+    border-radius: 8px;
 }
 
-nav ul li a {
-  color: #ffe58f;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 1.1rem;
-  font-family: 'Lora', Georgia, serif;
-  letter-spacing: 0.04em;
-  padding: 0.3em 0.7em;
-  border-radius: 4px;
-  transition: background 0.2s, color 0.2s;
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif; /* OLD: Classic heading font */
+    color: #5D4037; /* OLD: Dark brown for headings */
 }
 
-nav ul li a:hover, nav ul li a:focus {
-  color: #bfa256;
-  background: #1c2512;
-  text-decoration: underline;
+.site-header, .site-footer {
+    background-color: #4A3B31; /* OLD: Dark wood/metal like color */
+    color: #F5F5DC; /* OLD: Cream text on dark bg */
+    padding: 1em 0;
+    text-align: center;
 }
 
-.hero {
-  position: relative;
-  max-width: 100%;
-  margin-bottom: 2rem;
+.site-header h1 {
+    color: #F5F5DC;
+    margin: 0;
+    font-size: 2.5em;
 }
 
-.hero img {
-  width: 100%;
-  height: 280px;
-  object-fit: cover;
-  border-radius: 16px;
-  filter: brightness(0.7);
-  display: block;
+/* --- Form Styling ("Old" labels, "New" inputs) --- */
+#addItemForm div {
+    margin-bottom: 15px;
 }
 
-.hero-text {
-  position: absolute;
-  top: 50%;
-  left: 10%;
-  color: #fffbea;
-  text-shadow: 2px 2px 6px #222;
-  transform: translateY(-50%);
+#addItemForm label {
+    display: block;
+    margin-bottom: 5px;
+    font-family: 'Lora', serif; /* OLD: Slightly more ornate label font */
+    font-weight: bold;
+    color: #556B2F; /* OLD: Muted green for labels */
 }
 
-.hero-text h1 {
-  color: #ffe58f;
-  font-size: 2.6rem;
-  margin: 0;
-  font-family: 'Lora', Georgia, serif;
-}
-.hero-text p {
-  font-size: 1.3rem;
-}
-
-.content-box {
-  background: rgba(44, 56, 37, 0.97);
-  border-radius: 18px;
-  margin: 2rem auto;
-  padding: 2rem;
-  max-width: 900px;
-  box-shadow: 0 8px 32px 0 rgba(44, 56, 37, 0.18);
-  border: 2px solid #bfa256;
-  color: #fffbea;
-}
-
-section {
-  margin-bottom: 2.5rem;
-  background: rgba(237,227,197,0.13);
-  padding: 1rem 1.5rem;
-  border-radius: 12px;
-  box-shadow: 0 4px 16px 0 rgba(44, 56, 37, 0.08);
-}
-
-section h2 {
-  color: #bfa256;
-  font-family: 'Lora', Georgia, serif;
-  margin-top: 0;
-}
-
-.train-box {
-  background: #ede3c5;
-  color: #1c2512;
-  border-radius: 12px;
-  padding: 1rem;
-  margin: 1rem 0;
-  border-left: 6px solid #bfa256;
-  box-shadow: 0 2px 6px rgba(44, 56, 37, 0.09);
-}
-
-.lookup-image {
-  width: 100%;
-  max-width: 420px;
-  border-radius: 8px;
-  margin-bottom: 1rem;
-  display: block;
-}
-
-#train-form {
-  margin-bottom: 1rem;
-}
-
-#train-input {
-  padding: 0.5rem;
-  border-radius: 8px;
-  border: 1px solid #bfa256;
-  width: 70%;
-  margin-right: 0.5rem;
-}
-
-#train-form button {
-  padding: 0.5rem 1rem;
-  background: #bfa256;
-  color: #1c2512;
-  border: none;
-  border-radius: 8px;
-  cursor: pointer;
-  font-weight: bold;
-  transition: background 0.2s;
-}
-
-#train-form button:hover {
-  background: #e1d393;
-}
-
-.museum-list, .event-list {
-  list-style: none;
-  padding-left: 0;
-}
-
-.museum-list li, .event-list li {
-  background: #ede3c5;
-  color: #1c2512;
-  border-radius: 12px;
-  padding: 1rem;
-  margin: 1rem 0;
-  border-left: 6px solid #bfa256;
-  box-shadow: 0 2px 6px rgba(44, 56, 37, 0.09);
-}
-
-.museum-list a, .event-list a {
-  color: #2e4a27;
-  text-decoration: underline;
-  font-weight: bold;
-}
-
-.museum-list a:hover, .event-list a:hover {
-  color: #bfa256;
-  background: #1c2512;
-  padding: 0 0.25em;
-  border-radius: 3px;
-  transition: all 0.2s;
-}
-
-footer.footer {
-  margin-top: 2rem;
-  color: #bfa256;
-  text-align: center;
-  font-size: 1rem;
-  letter-spacing: 0.05em;
-}
-
-/* Responsive */
-@media (max-width: 600px) {
-  .content-box {
-    padding: 1rem;
-    margin: 0.5rem;
-  }
-  .lookup-image {
-    max-width: 100%;
-    height: auto;
-  }
-  #train-input {
+#addItemForm input[type="text"],
+#addItemForm select,
+#addItemForm textarea {
     width: 100%;
-    margin-bottom: 0.5rem;
-  }
-  .hero img {
-    height: 160px;
-  }
-  .hero-text h1 {
-    font-size: 1.4rem;
-  }
-  .hero-text p {
-    font-size: 1rem;
-  }
-  nav ul {
-    flex-direction: column;
-    gap: 0.6rem;
-    padding: 0.5rem 0.6rem;
-    border-radius: 0 0 10px 10px;
-  }
+    padding: 10px;
+    border: 1px solid #ccc; /* NEW: Standard modern border */
+    border-radius: 4px; /* NEW: Slight rounding */
+    box-sizing: border-box; /* Important for width calculation */
+    font-family: 'Open Sans', sans-serif; /* NEW: Consistent input text */
+}
+
+/* --- Button Styling ("New" Action) --- */
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+.btn-primary {
+    background-color: #007BFF; /* NEW: Vibrant blue accent */
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+}
+
+/* --- Item Card Styling (Placeholder for now) --- */
+.item-cards-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); /* Responsive grid */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.item-card {
+    border: 1px solid #B8860B; /* OLD: Brassy gold border */
+    background-color: #FFF8DC; /* OLD: Cornsilk, slightly aged paper */
+    padding: 15px;
+    border-radius: 5px;
+    box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+.item-card h3 {
+    font-family: 'Playfair Display', serif;
+    color: #8B0000; /* OLD: Deep red for card titles */
+    margin-top: 0;
+}
+
+.item-card p {
+    font-size: 0.9em;
+    margin-bottom: 5px;
+}
+
+.item-card .label {
+    font-family: 'Lora', serif;
+    font-weight: bold;
+}
+
+.placeholder-text {
+    font-style: italic;
+    color: #777;
 }

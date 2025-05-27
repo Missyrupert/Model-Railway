@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+  <title>UK Model Railway Heritage</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="content-box">
+    <h1 class="main-title">UK Model Railway Heritage</h1>
+    <p>
+      Welcome! This site celebrates the rich tradition of model railways in Britain, exploring their fascinating history, enduring popularity, and unique place in our national culture.
+    </p>
+
+    <section>
+      <h2>History of Model Railways</h2>
+      <p>
+        Model railways first appeared in the Victorian era, captivating generations ever since. The UK led the way with iconic makers like Hornby and Tri-ang, inspiring hobbyists to recreate the golden age of rail in miniature. The rise of clubs, exhibitions, and dedicated magazines from the early 20th century made model railways a beloved pastime for all ages.
+      </p>
+      <p>
+        In British popular culture, model railways appear in films like "The Railway Children" and TV shows such as "Thomas & Friends." Today, clubs, layouts, and competitions remain at the heart of UK hobby life.
+      </p>
+    </section>
+
+    <section>
+      <h2>Why Model Railways?</h2>
+      <p>
+        From children to seasoned collectors, model railways attract people from every walk of life. They combine creativity, craftsmanship, and history, offering a relaxing escape and a tangible link to Britain’s transport heritage. Whether building layouts or restoring classic trains, the hobby bridges generations and fosters friendships.
+      </p>
+    </section>
+
+    <section>
+      <h2>Train Lookup</h2>
+      <form id="train-form">
+        <input
+          id="train-input"
+          type="text"
+          placeholder="Type a train name (e.g., Flying Scotsman)..."
+          aria-label="Type train name"
+        />
+        <button type="submit">Search</button>
+      </form>
+      <div id="train-result" class="train-box"></div>
+    </section>
+
+    <section>
+      <h2>Did You Know?</h2>
+      <ul id="fun-facts"></ul>
+    </section>
+
+    <footer class="footer">
+      &copy; <span id="year"></span> UK Model Railway Heritage. All rights reserved.
+    </footer>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
